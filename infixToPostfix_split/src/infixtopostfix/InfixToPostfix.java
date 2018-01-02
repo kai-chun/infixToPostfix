@@ -15,12 +15,13 @@ import java.util.StringTokenizer;
 public class InfixToPostfix {
 
     public static void main(String[] args) {          
-        Scanner input=new Scanner(System.in);          
-        String a=input.next();          
-        StringTokenizer nums = new StringTokenizer(a, "+|-|*|/|(|)|%",true);      
-        int times=0;      
+        Scanner input = new Scanner(System.in);          
+        String a = input.next();          
+        StringTokenizer nums = new StringTokenizer(a, "+|-|*|/|(|)|%", true); // 分割運算式      
+        int times = 0;  
+        
         while (nums.hasMoreTokens()) {      
-            if(times !=0){      
+            if(times != 0){      
                 System.out.print(" ");      
              }      
             System.out.print(nums.nextToken());      
